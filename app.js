@@ -1,5 +1,6 @@
 console.log("test");
-//! Parts starting in red are where ive had help from ai
+
+//! Parts starting in red are where I've had help from AI
 // MAKING THE ELEMENTS! (ROBBED FROM JOE)
 // Select the elements where the cookie count, CPS, and other data will be displayed
 const noCookies = document.getElementById("noc");
@@ -89,7 +90,7 @@ setInterval(() => {
 }, 1000);
 
 //!================================================================================================================
-// Had some help from ai because i COULD NOT make this api work
+// Had some help from AI because I COULD NOT make this API work
 // FUNCTION TO FETCH SHOP UPGRADES FROM API
 async function getShopUpgrades() {
   try {
@@ -116,7 +117,7 @@ async function getShopUpgrades() {
       upgradeElement.classList.add("sItem");
 
       //!==========================================================================================================
-      // I have no idea how to explain this, mostly work done by ai but i couldnt find another way to track items without it and didnt want to give an incomplete submission
+      // I have no idea how to explain this, mostly work done by AI but I couldn't find another way to track items without it and didn't want to give an incomplete submission
       // Set the inner HTML for the upgrade item
       upgradeElement.innerHTML = `
           <div class="quantity">${
