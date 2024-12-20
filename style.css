@@ -1,0 +1,187 @@
+/* as you can probably tell i really enjoy styling */
+/* the smallest box shadow really makes such a fat difference */
+/*MAIN*/
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+#container {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 850px;
+  box-sizing: border-box;
+}
+
+/*HEADER*/
+h1 {
+  color: #ff8c00;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  width: 100%;
+  text-align: center;
+}
+
+/*COOKIES BUTTON*/
+#theButton {
+  background-color: #ff8c00;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#theButton:hover {
+  background-color: #e07b00;
+}
+
+/*COOKIES AND CPS*/
+#cookie-display {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#noc,
+#cps {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#noc {
+  color: #333;
+}
+
+#cps {
+  color: #4caf50;
+}
+
+/*ERROR*/
+#error {
+  color: #d32f2f;
+  font-weight: bold;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/*SHOP*/
+#shop-container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+#shop {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.sItem {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  width: 150px;
+  text-align: center;
+}
+
+.sItem:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.sItem .quantity {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff8c00;
+}
+
+.sItem button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.sItem button:hover {
+  background-color: #45a049;
+}
+
+.sItem div {
+  font-size: 16px;
+  color: #333;
+}
+
+/* trying to implement media in all my submissions */
+@media (max-width: 900px) {
+  #container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  #theButton {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  .sItem {
+    padding: 12px;
+    width: 120px;
+  }
+
+  .sItem .quantity {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  #container {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .sItem {
+    width: 100%;
+  }
+}
